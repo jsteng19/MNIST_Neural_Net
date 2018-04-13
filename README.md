@@ -18,5 +18,8 @@ Neural Networks and Deep Learning: http://neuralnetworksanddeeplearning.com/
 3Blue1Brown series on Neural Networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 
 MNIST database: http://yann.lecun.com/exdb/mnist/
-Martin Thoma's project "Classify MNIST with PyBrain" which I used to read the MNIST dataset and create a Python list from it:
+Martin Thoma's project "Classify MNIST with PyBrain" which I used to parse the MNIST dataset and create a Python list from it, which I then serialized:
 https://martin-thoma.com/classify-mnist-with-pybrain/
+
+The serialized (.pickle) MNIST lists used in the programs are too large to upload to Github. They are uploaded in this Google Drive folder:
+https://drive.google.com/drive/folders/1vAlvIMT4lpOiHP3lEoO7SguoVWfMGsbB?usp=sharing
