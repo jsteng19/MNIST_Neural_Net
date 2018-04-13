@@ -55,10 +55,10 @@ def processImage(image, database):
     for i in range (10):
         layers[2][i] = sigmoid(numpy.dot(weights[1][i], layers[1]) - biases[1][i]) 
 
-#applies a Stoichiastic adjustment on the weights and biases
-#based on the partial derivatives of the weights and biases and
-#a learning constant using a subset of the training data
-#specified by the arguments
+# applies a Stoichiastic adjustment on the weights and biases
+# based on the partial derivatives of the weights and biases and
+# a learning constant using a subset of the training data
+# specified by the arguments
 def applyStoich(start, end, database = 0):
     gradientSum = 0
     for image in range (start, end):
@@ -70,8 +70,8 @@ def applyStoich(start, end, database = 0):
     weights = numpy.add(weights, -learning_constant * averageGradient[0])
     biases = numpy.add(biases, -learning_constant * averageGradient[1])
     
-#returns two arrays identical in structure to the array of weights and biases
-#containing the partial derivatives of cost with respect to each weight or bias
+# returns two arrays identical in structure to the array of weights and biases
+# containing the partial derivatives of cost with respect to each weight or bias
 def getGradient(image, database):
     
     weightGradient = numpy.zeros_like(weights)
@@ -88,8 +88,8 @@ def getGradient(image, database):
 
     return numpy.array([weightGradient, biasGradient])
 
-#returns two lists of lists representing the gradient of the weights and biases between
-#layer outLayerIndex and layer outLayerIndex - 1
+# returns two lists of lists representing the gradient of the weights and biases between
+# layer outLayerIndex and layer outLayerIndex - 1
 def getGradientBetweenLayers(outLayerIndex, desired):
     weightGradient = numpy.zeros_like(weights[outLayerIndex - 1])
     biasGradient = numpy.zeros_like(biases[outLayerIndex - 1])
@@ -101,7 +101,7 @@ def getGradientBetweenLayers(outLayerIndex, desired):
         
     return [weightGradient, biasGradient]
 
-#returns the "desired" output of the layer n-1 given the layer n and the weights and biases. (See README)
+# returns the "desired" output of the layer n-1 given the layer n and the weights and biases. (See README)
 def backProp(layer, lastDesired, database = 0):
     desired = [0]*len(layers[layer])
     for node in range (len(layers[layer])):
