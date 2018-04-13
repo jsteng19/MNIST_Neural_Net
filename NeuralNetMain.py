@@ -77,7 +77,9 @@ def getGradient(image, database):
     weightGradient = numpy.zeros_like(weights)
     biasGradient = numpy.zeros_like(biases)
     desired = numpy.zeros(10)
-    for layer in range (len(layers) - 1, 1, -1):
+    for layer in range (len(layers) - 1, 1, -1): # In a fully operational network, this loop would iterate down to 0, training all the layers.
+                                                 # By setting the end of the range to 1, I limited the program to training the final layer of 
+                                                 # weights and biases. This means the backProp function never gets called.
         if layer == len(layers) - 1:
             desired[mnist[database][1][image]] = 1
         else:
