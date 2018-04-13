@@ -8,7 +8,7 @@ The program uses serialized (.pickle) lists to represent the MNIST database. For
 The weights are initialized in a random distribution by the WeightsAndBiasesGenerator.py program. The range of the random distribution was determined by an equation found on the forum StackExchange (https://datascience.stackexchange.com/questions/22093/why-should-the-initialization-of-weights-and-bias-be-chosen-around-0?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
 The biases are initialized to 0.
 
-The program only partially works as intended and is still a work in progress. The second layer of weights and biases (between the hidden and output layer) was trained and caused an improvement of accuracy to about 60%
+The program only partially works as intended and is still a work in progress. The second layer of weights and biases (between the hidden and output layer) was trained and caused an improvement of accuracy to about 60% depending on the initial weights (61.3% is the highest so far). The 
 
 Educational resources used: 
 Neural Networks and Deep Learning: http://neuralnetworksanddeeplearning.com/
