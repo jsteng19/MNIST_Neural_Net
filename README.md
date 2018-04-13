@@ -5,9 +5,15 @@ The network is made up of three layers: the input layer, the hidden layer, and t
 
 The program uses serialized (.pickle) lists to represent the MNIST database. For example, the training database file contains two parallel lists. One list contains 2D lists that represent the pixel values of each image. The other list contains the integer that the image represents in handwriting. 
 
-The program only partially works as intended. 
+The weights are initialized in a random distribution by the WeightsAndBiasesGenerator.py program. The range of the random distribution was determined by an equation found on the forum StackExchange (https://datascience.stackexchange.com/questions/22093/why-should-the-initialization-of-weights-and-bias-be-chosen-around-0?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
+The biases are initialized to 0.
 
+The program only partially works as intended and is still a work in progress. The second layer of weights and biases (between the hidden and output layer) was trained and caused an improvement of accuracy to about 60%
 
 Educational resources used: 
 Neural Networks and Deep Learning: http://neuralnetworksanddeeplearning.com/
 3Blue1Brown series on Neural Networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+
+MNIST database: http://yann.lecun.com/exdb/mnist/
+Martin Thoma's project "Classify MNIST with PyBrain" which I used to read the MNIST dataset and create a Python list from it:
+https://martin-thoma.com/classify-mnist-with-pybrain/
