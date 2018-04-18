@@ -1,9 +1,9 @@
 import pickle, numpy
 from PIL import Image
 layers = [None, numpy.zeros(30), numpy.zeros(10)]
-mnist = [pickle.load(open("/Users/jstenger/Desktop/MNIST/mnist_train.pickle", "rb")), pickle.load(open("/Users/jstenger/Desktop/MNIST/mnist_test.pickle", "rb"))]
-weights = [numpy.array(pickle.load(open("/Users/jstenger/Desktop/MNIST/weights_3layerstrained2.pickle", "rb"))[0]), numpy.array(pickle.load(open("/Users/jstenger/Desktop/MNIST/weights_3layerstrained2.pickle", "rb"))[1])]
-biases = [numpy.array(pickle.load(open("/Users/jstenger/Desktop/MNIST/biases_3layerstrained2.pickle", "rb"))[0]), numpy.array(pickle.load(open("/Users/jstenger/Desktop/MNIST/biases_3layerstrained2.pickle", "rb"))[1])]
+mnist = [pickle.load(open("mnist_train.pickle", "rb")), pickle.load(open("mnist_test.pickle", "rb"))]
+weights = [numpy.array(pickle.load(open("weights_3layerstrained2.pickle", "rb"))[0]), numpy.array(pickle.load(open("weights_3layerstrained2.pickle", "rb"))[1])]
+biases = [numpy.array(pickle.load(open("biases_3layerstrained2.pickle", "rb"))[0]), numpy.array(pickle.load(open("biases_3layerstrained2.pickle", "rb"))[1])]
 
 
 def main():

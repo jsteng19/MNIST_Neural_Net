@@ -15,10 +15,10 @@ for x in range (10):
 
 
 
-weights_pickle = open("/Users/jstenger/Desktop/MNIST/weights_3layers.pickle", "wb")
+weights_pickle = open("weights_3layers.pickle", "wb")
 pickle.dump(weights, weights_pickle)
 weights_pickle.close()
 
-biases_pickle = open("/Users/jstenger/Desktop/MNIST/biases_3layers.pickle", "wb")
+biases_pickle = open("biases_3layers.pickle", "wb")
 pickle.dump(biases, biases_pickle)
 biases_pickle.close()

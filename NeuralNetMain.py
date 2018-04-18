@@ -1,9 +1,9 @@
 import pickle, numpy
 from PIL import Image
 
-mnist = [pickle.load(open("/Users/jstenger/Desktop/MNIST/mnist_train.pickle", "rb")), pickle.load(open("/Users/jstenger/Desktop/MNIST/mnist_test.pickle", "rb"))]
-weights = pickle.load(open("/Users/jstenger/Desktop/MNIST/untrainedWeights.pickle", "rb")) 
-biases = pickle.load(open("/Users/jstenger/Desktop/MNIST/untrainedBiases.pickle", "rb"))
+mnist = [pickle.load(open("mnist_train.pickle", "rb")), pickle.load(open("mnist_test.pickle", "rb"))]
+weights = pickle.load(open("untrainedWeights.pickle", "rb")) 
+biases = pickle.load(open("untrainedBiases.pickle", "rb"))
 learning_constant = 1
 backprop_constant = 1
 
@@ -19,10 +19,10 @@ def main():
     print("accuracy:" ,testAccuracy(1000))
 
     #save parameters to a new .pickle file
-    biases_pickle = open("/Users/jstenger/Desktop/MNIST/trainedBiases2.pickle", "wb")
+    biases_pickle = open("trainedBiases2.pickle", "wb")
     pickle.dump(biases, biases_pickle)
     biases_pickle.close()
-    weights_pickle = open("/Users/jstenger/Desktop/MNIST/trainedWeights2.pickle", "wb")
+    weights_pickle = open("trainedWeights2.pickle", "wb")
     pickle.dump(weights, weights_pickle)
     biases_pickle.close()
 
