@@ -19,10 +19,10 @@ def main():
     print("accuracy:" ,testAccuracy(1000))
 
     #save parameters to a new .pickle file
-    biases_pickle = open("/Users/jstenger/Desktop/MNIST/trainedBiases2.pickle", "wb")
+    biases_pickle = open("/Users/jstenger/Desktop/MNIST/trainedBiases.pickle", "wb")
     pickle.dump(biases, biases_pickle)
     biases_pickle.close()
-    weights_pickle = open("/Users/jstenger/Desktop/MNIST/trainedWeights2.pickle", "wb")
+    weights_pickle = open("/Users/jstenger/Desktop/MNIST/trainedWeights.pickle", "wb")
     pickle.dump(weights, weights_pickle)
     biases_pickle.close()
 
