@@ -12,7 +12,7 @@ layers = [None, numpy.zeros(30), numpy.zeros(10)]
 def main():
     print("accuracy:" , testAccuracy(1000))
     batch_size = 150 #the number of images included in each "batch." An average gradient is calculated and applied to the weights and biases for each batch
-    batches = 400
+    batches = 400 # batch_size * batches = 60,000 (size of training database)
     print("Batch size: ", batch_size, " learning constant: ", learning_constant)
     for image in range(0, batch_size * batches, batch_size):
         applyStoich(image, image + batch_size)
