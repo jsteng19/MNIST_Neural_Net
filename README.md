@@ -11,10 +11,10 @@ The weights are initialized in a random distribution by the WeightsAndBiasesGene
 The biases are initialized to 0.
 
 FUNCTIONALITY AND BACKPROPAGATION
-The program only partially works as intended and is still a work in progress. The second layer of weights and biases (between the hidden and output layer) was trained and caused an improvement of accuracy to about 60% depending on the initial weights (61.3% is the highest so far). The problem preventing further accuracy is in the approach to or implementation of backpropagation. The non-functional version of a backpropagation function is included in the NeuralNet.py file but is never called in the program. When the backprop function is called, it makes changes to the weights and biases but no significant improvements in the program's accuracy.
+The program only partially works as intended and is still a work in progress. The second layer of weights and biases (between the hidden and output layer) was trained and caused an improvement of accuracy to about 60% depending on the initial weights (61.3% is the highest so far). The problem preventing further accuracy is in the approach to or implementation of backpropagation. The non-functional version of a backpropagation function is included in the NeuralNet.py file but is never called in the program. When the backprop function is called, it makes changes to the weights and biases but no significant improvements in the program's accuracy. The program was run entirely on a 2012 Macbook Air with no special drivers to harness GPU power, and therefore training and testing took a significant amount of time. Therefore systematically optimizing hypervariables and initialization of weights and biases was out of the scope of this project. 
 
 RESOURCES
-Neural Networks and Deep Learning: http://neuralnetworksanddeeplearning.com/
+Neural Networks and Deep Learning: http://neuralnetworksanddeeplearning.com/ (I made it a point to not consult the code of this project)
 3Blue1Brown series on Neural Networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 
 MNIST database: http://yann.lecun.com/exdb/mnist/
